@@ -1,9 +1,17 @@
 {
-  "authors": [{
-    "account_name": "cm-steem",
-    "filters": {}
-  ],
-  "about_blog_permlink": "https://www.gridcoin.us",
-  "about_blog_author": "cm-steem",
-  "source_blockchain": "steem"
+  "account_name": "cm-steem",
+  "filters": {
+    "tags": {
+      "blacklist": [],
+      "whitelist": []
+    },
+    "title": {
+      "blacklist": [],
+      "whitelist": []
+    },
+    "created": {
+      "only_after": "2017-01-01",
+      "only_before": ""
+    }
+  }
 }
