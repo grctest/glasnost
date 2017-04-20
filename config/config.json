@@ -1,0 +1,9 @@
+{
+  "authors": [{
+    "account_name": "cm-steem",
+    "filters": {}
+  ],
+  "about_blog_permlink": "https://www.gridcoin.us",
+  "about_blog_author": "cm-steem",
+  "source_blockchain": "steem"
+}
