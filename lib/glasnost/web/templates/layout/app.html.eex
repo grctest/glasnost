@@ -203,9 +203,10 @@
 		</main>
 	</div>
 	<footer>
-		<div class="ui large inverted menu">
-			<div class="ui container" style="text-align:center;">
-				Site Owner: <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>
+		<div class="ui large inverted menu" style="text-align: center;">
+			<div class="ui container" style="margin-top:10px; color: white;">
+				BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="">Glasnost</a> & Maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.<br/>
+				<a href="https://beyondboinc.net">Home</a>, <a href="https://beyondboinc.net/sitemap.xml">SiteMap</a>.
 			</div>
 		</div>
 	</footer>

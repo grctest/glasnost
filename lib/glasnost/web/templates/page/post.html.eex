@@ -9,7 +9,7 @@
     </div>
 
     <div class="ui section divider"></div>
-    <div style="text-align:center;">
+    <div style="text-align:center; padding-bottom: 10px;">
         <div class="addthis_inline_share_toolbox"></div>
 		<div class="ui breadcrumb">
 		  <a class="section" href="https://beyondboinc.net">Home</a>
