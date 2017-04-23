@@ -8,6 +8,7 @@
 	<meta content="Customminer aka @cm-steem" name="author">
 	<meta content="index, follow" name="robots">
 	<meta content="1 days" name="revisit-after">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<link href="https://beyondboinc.net" rel="canonical">
 	<title>BeyondBOINC: <%= naive_translate("head title", @conn.assigns[:lang])%></title>
  	<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
