@@ -6,6 +6,8 @@
       <%= raw(@post.body) %>
     </div>
 
+    <div class="ui section divider"></div>
+
     <div style="text-align:center;">
 		<div class="ui breadcrumb">
 		  <a class="section">Home</a>
