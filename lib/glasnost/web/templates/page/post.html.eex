@@ -1,6 +1,20 @@
 <div class="ui main text container">
-    <h1 class="ui header"><%= @post.title %> </h1>
+    <h1 class="ui header"><a href="https://steemit.com/@<%= post.author %>/<%= post.permlink %>"><%= post.permlink %></a></h1>
+    <h2 class="ui header">Author: <a href="https://steemit.com/@<%= post.author %>/"><%= post.author %></a></h2>
+
     <div class="">
       <%= raw(@post.body) %>
     </div>
-  </div>
+
+    <div style="text-align:center;">
+		<div class="ui breadcrumb">
+		  <a class="section">Home</a>
+		  <span class="divider">/</span>
+		  <a class="section">Author</a>
+		  <span class="divider">/</span>
+		  <div class="section"><a href="https://beyondboinc.net/authors/@<%= post.author %>/"><%= post.author %></a></div>
+		  <span class="divider">/</span>
+		  <div class="active section"><a href="https://steemit.com/@<%= post.author %>/<%= post.permlink %>"><%= post.permlink %></a></div>
+		</div>
+    </div>
+</div>
