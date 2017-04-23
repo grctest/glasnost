@@ -41,6 +41,5 @@
 <!-- TODO: Add metadata for the following:
  "datePublished": "2015-09-20",
  "dateCreated": "2015-09-20",
-  <%= if @img_src do %><%= @img_src %><% end %>
  "image": "https://beyondboinc.net/images/steem-logo.png",
  "dateModified": "2015-09-20", -->
