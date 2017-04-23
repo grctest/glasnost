@@ -1,33 +1,3 @@
-<script type="application/ld+json">
-{
-"@context": "http://schema.org",
-"@type": "NewsArticle",
-"mainEntityOfPage": "https://beyondboinc.net",
-"headline": "<%= @post.title %>",
-"datePublished": "<%= @post.created %>",
-"dateModified": "<%= @post.created %>",
-"description": "<%= @post.title %>",
-"author": {
-  "@type": "Person",
-  "name": "<%= @post.author %>"
-},
-"publisher": {
-  "@type": "Organization",
-  "name": "Steemit",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://beyondboinc.net/images/steem-logo.png",
-    "width": 600,
-    "height": 60
-  }
-},
-"image": {
-  "@type": "ImageObject",
-  "url": "<% img_src = hd(@post.json_metadata["image"] || @post.json_metadata["images"] || "https://beyondboinc.net/images/steem-logo.png" ) %>",
-  "height": 1280,
-  "width": 857
-}
-}
 </script>
 
 <div class="ui main text container">
@@ -41,16 +11,6 @@
     </div>
 
     <div class="ui section divider"></div>
-
-      <amp-social-share type="email" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="gplus" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="linkedin" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="pinterest" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="tumblr" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="twitter" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-      <amp-social-share type="whatsapp" data-param-text="<%= @post.title %>" data-param-url="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"></amp-social-share>
-  
-    <br/>
 
     <div style="text-align:center;">
 		<div class="ui breadcrumb">
