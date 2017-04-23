@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BeyondBOINC displays the recently created content from a curated list of Steemit authors on the topics of cryptocurrency, distributed computing and technology." />
+  <meta name="keywords" content="Gridcoin, Bitshares, Steemit, Cryptocurrency, Blog, Aggregator, Glasnost, BOINC, BeyondBitcoin, BeyondBOINC, Distributed Computing, Cloud computing, Science, Peerplays, Blockchain, Decentralization, money, science, technology, crypto" />
+  <meta name="author" content="Customminer aka @cm-steem">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 days">
+  <link rel="canonical" href="https://beyondboinc.net">
+  <title>BeyondBOINC: <%= naive_translate("head title", @conn.assigns[:lang])%></title>
+
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"></link>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97813822-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body>
+  <header>
+    <div class="ui large fixed inverted menu">
+      <div class="ui container">
+        <a href="/" class="header item">
+          <img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
+        </a>
+        <a href="/" class="item"><%=naive_translate("home", @conn.assigns[:lang])%></a>
+        <!-- FIXME extract to LayoutView -->
+        <a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
+        <a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>
+        
+        <div class="ui simple dropdown item">
+		    Trade GRC
+		    <i class="dropdown icon"></i>
+		    <div class="menu">
+		      <div class="header">Decentralized Exchanges</div>
+			      <div class="item">
+	                <a href="https://bitsquare.io/" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> BitSquare</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://bitshares.openledger.info/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> OpenLedger</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://bit.btsabc.org/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> BTSABC</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://btsbots.com/a/OPEN.GRC" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> BTSBOTS</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://bitshares.org/" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> Bitshares-Light</a>
+			      </div>
+		      <div class="header">Centralized Exchanges</div>
+			      <div class="item">
+	                <a href="https://holytransaction.com/" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> HolyTransactions</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://poloniex.com/exchange/btc_grc" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> Poloniex</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://c-cex.com/?p=grc-btc" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> C-Cex</a>
+			      </div>
+			      <div class="item">
+	                <a href="https://bittrex.com/Market/Index?MarketName=BTC-GRC" style="color:#9A9899;"><i class="fa fa-credit-card" style="color:#707C34;"></i> Bittrex</a>
+			      </div>
+		    </div>
+		  </div>
+          
+       </div>
+    </div>
+  </header>
+  <!-- FIXME: needs a sticky footer instread of 100vh -->
+  <div class="ui container" style="min-height:100vh;">
+    <main role="main">
+      <div class="alert">
+        <%= if get_flash(@conn, :info) do %>
+        <div class="ui secondary yellow inverted segment"><%= get_flash(@conn, :info) %></div>
+        <% end %>
+        <%= if get_flash(@conn, :error) do %>
+        <div class="ui secondary red inverted segment"><%= get_flash(@conn, :error) %></div>
+        <% end %>
+      </div>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+  </div>
+  <footer>
+    <div class="ui large inverted menu">
+      <div class="ui container">
+      	Contact: <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>
+      </div>
+    </div>
+  </footer>
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+</body>
+</html>
