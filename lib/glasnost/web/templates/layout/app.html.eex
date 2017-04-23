@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -8,11 +8,15 @@
 	<meta content="Customminer aka @cm-steem" name="author">
 	<meta content="index, follow" name="robots">
 	<meta content="1 days" name="revisit-after">
+	
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
 	<link href="https://beyondboinc.net" rel="canonical">
 	<title>BeyondBOINC: <%= naive_translate("head title", @conn.assigns[:lang])%></title>
  	<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
  	<link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" rel="stylesheet">
+ 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 	<script>
 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
