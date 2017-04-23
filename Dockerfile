@@ -25,6 +25,8 @@ RUN npm install && \
  node node_modules/brunch/bin/brunch build && \
  rm -rf ./assets
 
+RUN npm install -g sitemap-generator-cli
+
 WORKDIR /glasnost_app
 RUN rm -r /glasnost_app/priv/data/mnesia || true
 RUN mkdir -p /glasnost_app/priv/data/mnesia
@@ -34,6 +36,5 @@ RUN mix ecto.create
 RUN mix ecto.migrate
 
 RUN mix phx.digest
-
 
 ENTRYPOINT mix phx.server
