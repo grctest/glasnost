@@ -101,7 +101,7 @@
 					</div>
 				</div>
 
-				<div class="ui floating labeled icon dropdown button">
+       			 <div class="ui simple dropdown item">
 					<i class="dropdown icon"></i> <span class="text">Community</span>
 					<div class="menu">
 						<div class="item">
