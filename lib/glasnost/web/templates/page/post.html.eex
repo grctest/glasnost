@@ -16,26 +16,42 @@
 		  <span class="divider">/</span>
 		  <div class="section">Author: <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></div>
 		  <span class="divider">/</span>
-		  <div class="active section"><a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"><%= @post.permlink %></a></div>
+		  <div class="active section"><a href="https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"><%= @post.permlink %></a></div>
 		</div>
     </div>
 </div>
 
 <script type="application/ld+json">
-{ "@context": "http://schema.org", 
- "@type": "Article",
- "headline": "<%= @post.title %>",
- "alternativeHeadline": "<%= @post.title %>",
- "image": "https://beyondboinc.net/images/steem-logo.png",
- "author": "<%= @post.author %>", 
- "editor": "<%= @post.author %>", 
- "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
- "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
- "publisher": "Steemit",
- "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
- "description": "<%= @post.title %>",
- "articleBody": "<%= raw(@post.body) %>"
- }
+[
+    {
+        "@context": "http://schema.org", 
+        "@type": "Article",
+        "headline": "<%= @post.title %>",
+        "alternativeHeadline": "<%= @post.title %>",
+        "about": "<%= @post.title %> <%= for tag <- @post.tags do %><%=tag%> <% end %>"
+        "image": "https://beyondboinc.net/images/steem-logo.png",
+        "author": "<%= @post.author %>", 
+        "editor": "<%= @post.author %>",
+        "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"
+        "sameAs": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"
+        "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
+        "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
+        "articleSection": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
+        "publisher": "Steemit",
+        "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
+        "description": "<%= @post.title %>",
+        "articleBody": "<%= raw(@post.body) %>"
+    },
+    {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "BeyondBOINC",
+        "accountablePerson": "<%= @post.author %>"
+        "accessModeSufficient": "textual, visual",
+        "alternateName": "BeyondBoinc",
+        "url": "https://beyondboinc.net"
+    }
+]
 </script>
 
 <!-- TODO: Add metadata for the following:

@@ -52,6 +52,7 @@
   "@type": "WebSite",
   "name": "BeyondBOINC",
   "alternateName": "BeyondBoinc",
+  "accessModeSufficient": "textual, visual",
   "url": "https://beyondboinc.net"
 }
  </script>
