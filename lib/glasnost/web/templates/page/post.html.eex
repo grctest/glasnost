@@ -26,7 +26,7 @@
  "@type": "Article",
  "headline": "<%= @post.title %>",
  "alternativeHeadline": "<%= @post.title %>",
- "image": "<%= if img_src do %><%= img_src %><% end %>||https://beyondboinc.net/images/steem-logo.png",
+ "image": "<%= if @img_src do %><%= @img_src %><% end %>||https://beyondboinc.net/images/steem-logo.png",
  "author": "<%= @post.author %>", 
  "editor": "<%= @post.author %>", 
  "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
