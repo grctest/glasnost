@@ -45,3 +45,13 @@
       <% end %>
     </div>
   </div>
+
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "WebSite",
+  "name": "BeyondBOINC",
+  "alternateName": "BeyondBoinc",
+  "url": "https://beyondboinc.net"
+}
+ </script>
