@@ -11,7 +11,6 @@
     <div class="ui section divider"></div>
     <div style="text-align:center;">
         <div class="addthis_inline_share_toolbox"></div>
-        </br>
 		<div class="ui breadcrumb">
 		  <a class="section" href="https://beyondboinc.net">Home</a>
 		  <span class="divider">/</span>
@@ -27,11 +26,11 @@
  "@type": "Article",
  "headline": "<%= @post.title %>",
  "alternativeHeadline": "<%= @post.title %>",
- "image": "https://beyondboinc.net/images/steem-logo.png",
+ "image": "<%= if img_src do %><%= img_src %><% end %>||https://beyondboinc.net/images/steem-logo.png",
  "author": "<%= @post.author %>", 
  "editor": "<%= @post.author %>", 
- "genre": "<%= for tag <- @post.tags do %><%=tag%><% end %>", 
- "keywords": "<%= for tag <- @post.tags do %><%=tag%><% end %>", 
+ "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
+ "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
  "publisher": "Steemit",
  "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
  "description": "<%= @post.title %>",
@@ -39,6 +38,8 @@
  }
 </script>
 
-<!--  "datePublished": "2015-09-20",
+<!-- TODO: Add metadata for the following:
+ "datePublished": "2015-09-20",
  "dateCreated": "2015-09-20",
+ "image": "https://beyondboinc.net/images/steem-logo.png",
  "dateModified": "2015-09-20", -->
