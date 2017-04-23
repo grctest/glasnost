@@ -23,7 +23,7 @@
 },
 "image": {
   "@type": "ImageObject",
-  "url": "<% img_src = hd(post.json_metadata["image"] || post.json_metadata["images"] || "https://beyondboinc.net/images/steem-logo.png" ) %>",
+  "url": "<% img_src = hd(@post.json_metadata["image"] || @post.json_metadata["images"] || "https://beyondboinc.net/images/steem-logo.png" ) %>",
   "height": 1280,
   "width": 857
 }
