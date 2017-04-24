@@ -55,7 +55,7 @@
          "@id": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"
         },
         "description": "<%= @post.title %>",
-        "articleBody": "<%= raw(@post.body) %>",
+        "articleBody": "<%= @post.body %>",
         "datePublished": "<%= @post.created %>",
         "dateCreated": "<%= @post.created %>",
         "dateModified": "<%= @post.created %>"
@@ -71,10 +71,3 @@
     }
 ]
 </script>
-
-<!-- TODO: Add metadata for the following:
- "datePublished": "2015-09-20",
- "dateCreated": "2015-09-20",
- "image": "https://beyondboinc.net/images/steem-logo.png",
- "dateModified": "2015-09-20",
- "json metadata test": "" -->

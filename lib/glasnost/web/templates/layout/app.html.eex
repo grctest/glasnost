@@ -64,7 +64,7 @@
 </head>
 <body>
 	<header>
-		<div class="ui borderless fixed main menu">
+		<div class="ui stackable borderless fixed main menu">
 			<div class="ui text container">
 				<a href="/" class="header item">
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
@@ -241,7 +241,7 @@
 					</div>
 				</div>
 
-				<div class="ui action input">
+				<div class="ui action input mini">
 				  <input placeholder="Search..." type="text" id="Search">
 				  <button class="ui icon button" id="Button">
 				    <i class="search icon"></i>

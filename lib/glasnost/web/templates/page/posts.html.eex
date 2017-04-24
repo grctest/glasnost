@@ -1,4 +1,4 @@
-<div class="ui stackable three cards">
+<div class="ui three column doubling stackable grid cards">
   <%= for post <- @posts do %>
   <!-- TODO: extract image detection into view -->
   <!-- metadata images property varies from post to post: BOTH "images" and "images" are seen in the wild -->
