@@ -245,7 +245,7 @@ function googleTranslateElementInit() {
 					</div>
 				</div>
 
-				<gcse:search></gcse:search>
+				<div class="gcse-search"></div>
 
 				<div id="google_translate_element"></div>
 			</div>
