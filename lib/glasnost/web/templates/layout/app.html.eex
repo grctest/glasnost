@@ -14,8 +14,10 @@
 	<link href="https://beyondboinc.net" rel="canonical">
 	<title>BeyondBOINC: <%= naive_translate("head title", @conn.assigns[:lang])%></title>
  	<link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
- 	<link href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" rel="stylesheet">
-	
+ 	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.js"></script>
+
 	<!--Google Analytics-->
 	<script>
 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,12 +37,12 @@
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
           			BeyondBOINC
         		</a>
-        	<a href="/" class="item"><%=naive_translate("home", @conn.assigns[:lang])%></a>
-        	<!-- FIXME extract to LayoutView -->
-        	<a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
-        	<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>
-        
-        <div class="ui simple dropdown item">
+	        	<a href="/" class="item"><%=naive_translate("home", @conn.assigns[:lang])%></a>
+	        	<!-- FIXME extract to LayoutView -->
+	        	<a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
+	        	<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>
+	        
+	        	<div class="ui simple dropdown item">
 					Trade GRC <i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="header">
@@ -106,7 +108,7 @@
 					</div>
 				</div>
 
-       			 <div class="ui simple dropdown item">
+				<div class="ui simple dropdown item">
 					Community links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
