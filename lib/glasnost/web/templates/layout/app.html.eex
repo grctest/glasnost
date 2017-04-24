@@ -26,7 +26,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	
+
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 	<link href="https://beyondboinc.net" rel="canonical">
@@ -45,6 +45,26 @@
 	 ga('create', 'UA-97813822-1', 'auto');
 	 ga('send', 'pageview');
 	</script>
+	<!--Google Search-->
+	<script>
+	  (function() {
+	    var cx = '014318326974657236712:1fas3z2ane0';
+	    var gcse = document.createElement('script');
+	    gcse.type = 'text/javascript';
+	    gcse.async = true;
+	    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script>
+	<!--Google Translator-->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-97813822-1'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
 </head>
 <body>
 	<header>
@@ -225,6 +245,9 @@
 					</div>
 				</div>
 
+				<gcse:search></gcse:search>
+
+				<div id="google_translate_element"></div>
 			</div>
 		</div>
 	</header><!-- FIXME: needs a sticky footer instread of 100vh -->
