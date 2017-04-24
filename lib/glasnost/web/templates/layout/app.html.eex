@@ -9,6 +9,24 @@
 	<meta content="index, follow" name="robots">
 	<meta content="1 days" name="revisit-after">
 	
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/images/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
 	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 	<link href="https://beyondboinc.net" rel="canonical">
@@ -17,7 +35,6 @@
  	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.css" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.js"></script>
-
 	<!--Google Analytics-->
 	<script>
 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,16 +48,15 @@
 </head>
 <body>
 	<header>
-		<div class="ui borderless main menu">
+		<div class="ui borderless fixed main menu">
 			<div class="ui text container">
 				<a href="/" class="header item">
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
           			BeyondBOINC
         		</a>
-	        	<a href="/" class="item"><%=naive_translate("home", @conn.assigns[:lang])%></a>
 	        	<!-- FIXME extract to LayoutView -->
 	        	<a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
-	        	<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>
+	        	<!--<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>-->
 	        
 	        	<div class="ui simple dropdown item">
 					Trade GRC <i class="dropdown icon"></i>
