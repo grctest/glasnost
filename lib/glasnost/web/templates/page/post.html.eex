@@ -34,7 +34,13 @@
         "@type": "Article",
         "headline": "<%= @post.title %>",
         "alternativeHeadline": "<%= @post.title %>",
-        "image": "https://beyondboinc.net/images/steem-logo.png",
+        "image": {
+         "@type": "ImageObject",
+         "@url": "https://beyondboinc.net/images/steem-logo.png",
+         "@caption": "Steem-logo",
+         "@height": "696",
+         "@width": "696"
+        },
         "author" : { "@type" : "Person", "name" : "<%= @post.author %>" },
         "editor": { "@type" : "Person", "name" : "<%= @post.author %>" },
         "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>/",
