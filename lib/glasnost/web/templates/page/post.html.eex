@@ -2,7 +2,7 @@
     <h1 class="ui header"><a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"><%= @post.title %></a></h1>
     <h2 class="ui header">Author: <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></h2>
     <h3 class="ui header">Tags: 
-          <%= for tag <- post.tags do %>
+          <%= for tag <- @post.tags do %>
           <a class="ui  label" href="/tags/<%=tag%>">
             <%= format_tag(tag, @conn.assigns.lang) %>
           </a>
@@ -37,13 +37,17 @@
         "image": "https://beyondboinc.net/images/steem-logo.png",
         "author" : { "@type" : "Person", "name" : "<%= @post.author %>" },
         "editor": { "@type" : "Person", "name" : "<%= @post.author %>" },
-        "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>",
-        "sameAs": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>",
+        "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>/",
+        "sameAs": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>/",
         "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
         "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
         "articleSection": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
         "publisher" : { "@type" : "Organization", "name" : "Steemit" },
         "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
+        "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"
+        },
         "description": "<%= @post.title %>",
         "articleBody": "<%= raw(@post.body) %>",
         "datePublished": "<%= @post.created %>",
