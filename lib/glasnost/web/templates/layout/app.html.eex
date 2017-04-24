@@ -38,8 +38,8 @@
 	<!-- Google Search -->
 	<script>
 	$(document).ready(function(){
-	    $('#button').click(function(e) {  
-	        var inputvalue = $("#search").val();
+	    $('#Button').click(function(e) {  
+	        var inputvalue = $("#Search").val();
 	        window.location.replace("https://www.google.co.uk/#q=site:https://beyondboinc.net " + inputvalue);
 	    });
 	});
@@ -241,9 +241,11 @@
 					</div>
 				</div>
 
-				<div class="ui icon input">
-				  <input placeholder="Search..." type="text" id="Search" >
-				  <i class="inverted circular search link icon" id="button"></i>
+				<div class="ui action input">
+				  <input placeholder="Search..." type="text" id="Search">
+				  <button class="ui icon button" id="Button">
+				    <i class="search icon"></i>
+				  </button>
 				</div>
 			</div>
 		</div>
