@@ -246,8 +246,6 @@ function googleTranslateElementInit() {
 				</div>
 
 				<div class="gcse-search"></div>
-
-				<div id="google_translate_element"></div>
 			</div>
 		</div>
 	</header><!-- FIXME: needs a sticky footer instread of 100vh -->
@@ -306,6 +304,7 @@ function googleTranslateElementInit() {
 	        <a class="item" href="https://beyondboinc.net">Home</a>
 	        <a class="item" href="https://beyondboinc.net/sitemap.xml">Site Map</a>
 	        <a class="item" href="https://t.me/gridcoin">Gridcoin Chat</a>
+	        <div id="google_translate_element"></div>
 	      </div>
 	    </div>
 	</div>
