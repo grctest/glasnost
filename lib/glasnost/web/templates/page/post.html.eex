@@ -1,7 +1,13 @@
 <div class="ui main text container">
     <h1 class="ui header"><a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"><%= @post.title %></a></h1>
     <h2 class="ui header">Author: <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></h2>
-
+    <h3 class="ui header">Tags: 
+          <%= for tag <- post.tags do %>
+          <a class="ui  label" href="/tags/<%=tag%>">
+            <%= format_tag(tag, @conn.assigns.lang) %>
+          </a>
+          <% end %>
+    </h3>
     <div class="ui section divider"></div>
 
     <div class="">
@@ -28,25 +34,27 @@
         "@type": "Article",
         "headline": "<%= @post.title %>",
         "alternativeHeadline": "<%= @post.title %>",
-        "about": "<%= @post.title %> <%= for tag <- @post.tags do %><%=tag%> <% end %>"
         "image": "https://beyondboinc.net/images/steem-logo.png",
-        "author": "<%= @post.author %>", 
-        "editor": "<%= @post.author %>",
-        "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"
-        "sameAs": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"
+        "author" : { "@type" : "Person", "name" : "<%= @post.author %>" },
+        "editor": { "@type" : "Person", "name" : "<%= @post.author %>" },
+        "citation": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>",
+        "sameAs": "https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>",
         "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
         "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
         "articleSection": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
-        "publisher": "Steemit",
+        "publisher" : { "@type" : "Organization", "name" : "Steemit" },
         "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
         "description": "<%= @post.title %>",
-        "articleBody": "<%= raw(@post.body) %>"
+        "articleBody": "<%= raw(@post.body) %>",
+        "datePublished": "<%= @post.created %>",
+        "dateCreated": "<%= @post.created %>",
+        "dateModified": "<%= @post.created %>"
     },
     {
         "@context": "http://www.schema.org",
         "@type": "WebSite",
         "name": "BeyondBOINC",
-        "accountablePerson": "<%= @post.author %>"
+        "accountablePerson": "<%= @post.author %>",
         "accessModeSufficient": "textual, visual",
         "alternateName": "BeyondBoinc",
         "url": "https://beyondboinc.net"
@@ -58,4 +66,5 @@
  "datePublished": "2015-09-20",
  "dateCreated": "2015-09-20",
  "image": "https://beyondboinc.net/images/steem-logo.png",
- "dateModified": "2015-09-20", -->
+ "dateModified": "2015-09-20",
+ "json metadata test": "<%= @post.json_metadata %>" -->

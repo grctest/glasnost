@@ -106,7 +106,7 @@
 				</div>
 
        			 <div class="ui simple dropdown item">
-					Community <i class="dropdown icon"></i>
+					Community links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
 							<i class="dropdown icon"></i> <span class="text">Gridcoin</span>
@@ -179,7 +179,27 @@
 									<a href="https://bitsharestalk.org/" style="color:#9A9899;">Forums</a>
 								</div>
 								<div class="item">
+									<a href="https://t.me/BitSharesDEX" style="color:#9A9899;">Telegram</a>
+								</div>
+								<div class="item">
 									<a href="https://cryptofresh.com/" style="color:#9A9899;">Explorer</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Peerplays</span>
+							<div class="right menu">
+								<div class="item">
+									<a href="https://bitshares.org/" style="color:#9A9899;">Official website</a>
+								</div>
+								<div class="item">
+									<a href="https://t.me/Peerplays" style="color:#9A9899;">Telegram</a>
+								</div>
+								<div class="item">
+									<a href="https://peerplays.chat/" style="color:#9A9899;">Peerplays.chat</a>
+								</div>
+								<div class="item">
+									<a href="https://github.com/BunkerChainLabsInc" style="color:#9A9899;">GitHub</a>
 								</div>
 							</div>
 						</div>
@@ -202,10 +222,12 @@
 			</div><%= render @view_module, @view_template, assigns %>
 		</main>
 	</div>
-	<footer>
+	<footer style="text-align: center;">
 		<div class="ui large inverted menu" style="text-align: center;">
-			<div class="ui container" style="margin-top:10px; color: white;">
-				BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="">Glasnost</a> & Maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.<br/>
+			<div class="ui container" style="margin-top:10px; color: white; text-align: center;">
+				BeyondBOINC is a <a href="https://steemit.com/"> Steemit </a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> & is maintained by <a href="https://steemit.com/@cm-steem/"> @CM-STEEM</a>.
+			</div>
+			<div class="ui container" style="margin-top:10px; color: white; text-align: center;">
 				<a href="https://beyondboinc.net">Home</a>, <a href="https://beyondboinc.net/sitemap.xml">SiteMap</a>.
 			</div>
 		</div>
