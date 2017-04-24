@@ -77,4 +77,4 @@
  "dateCreated": "2015-09-20",
  "image": "https://beyondboinc.net/images/steem-logo.png",
  "dateModified": "2015-09-20",
- "json metadata test": "<%= @post.json_metadata %>" -->
+ "json metadata test": "" -->
