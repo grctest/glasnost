@@ -29,10 +29,11 @@
 </head>
 <body>
 	<header>
-		<div class="ui large fixed inverted menu">
-			<div class="ui container">
+		<div class="ui borderless main menu">
+			<div class="ui text container">
 				<a href="/" class="header item">
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
+          			BeyondBOINC
         		</a>
         	<a href="/" class="item"><%=naive_translate("home", @conn.assigns[:lang])%></a>
         	<!-- FIXME extract to LayoutView -->
@@ -222,16 +223,51 @@
 			</div><%= render @view_module, @view_template, assigns %>
 		</main>
 	</div>
-	<footer style="text-align: center;">
-		<div class="ui large inverted menu" style="text-align: center;">
-			<div class="ui container" style="margin-top:10px; color: white; text-align: center;">
-				BeyondBOINC is a <a href="https://steemit.com/"> Steemit </a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> & is maintained by <a href="https://steemit.com/@cm-steem/"> @CM-STEEM</a>.
-			</div>
-			<div class="ui container" style="margin-top:10px; color: white; text-align: center;">
-				<a href="https://beyondboinc.net">Home</a>, <a href="https://beyondboinc.net/sitemap.xml">SiteMap</a>.
-			</div>
-		</div>
-	</footer>
+
+	<div class="ui inverted vertical footer segment">
+	    <div class="ui center aligned container">
+	      <div class="ui stackable inverted divided grid">
+	        <div class="three wide column">
+	          <h4 class="ui inverted header">Promoted Tags</h4>
+	          <div class="ui inverted link list">
+	            <a href="https://beyondboinc.net/tags/gridcoin" class="item">Gridcoin</a>
+	            <a href="https://beyondboinc.net/tags/boinc" class="item">BOINC</a>
+	            <a href="https://beyondboinc.net/tags/beyondbitcoin" class="item">BeyondBitcoin</a>
+	            <a href="https://beyondboinc.net/tags/cryptocurrency" class="item">Cryptocurrency</a>
+	          </div>
+	        </div>
+	        <div class="three wide column">
+	          <h4 class="ui inverted header">Promoted Authors</h4>
+	          <div class="ui inverted link list">
+	            <a href="https://beyondboinc.net/authors/cm-steem/" class="item">CM-Steem</a>
+	            <a href="https://beyondboinc.net/authors/officialfuzzy/" class="item">OfficialFuzzy</a>
+	            <a href="https://beyondboinc.net/authors/erkan/" class="item">Erkan</a>
+	            <a href="https://beyondboinc.net/authors/chris4210/" class="item">Chris4210</a>
+	          </div>
+	        </div>
+	        <div class="three wide column">
+	          <h4 class="ui inverted header">Affiliate links</h4>
+	          <div class="ui inverted link list">
+	            <a href="http://www.vultr.com/?ref=6948861" class="item">Vultr</a>
+	            <a href="https://affiliate.namecheap.com/?affId=115065" class="item">Namecheap</a>
+	            <a href="http://nordvpn.com/?ref=135613bd" class="item">NordVPN</a>
+	            <a href="https://purse.io/?_r=ewuZjT" class="item">Purse.IO</a>
+	          </div>
+	        </div>
+	        <div class="seven wide column">
+	          <h4 class="ui inverted header">About</h4>
+	          <p>BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> library & is actively maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.</p>
+	        </div>
+	      </div>
+	      <div class="ui inverted section divider"></div>
+	      <img class="ui centered mini image" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
+	      <div class="ui horizontal inverted small divided link list">
+	        <a class="item" href="https://beyondboinc.net">Home</a>
+	        <a class="item" href="https://beyondboinc.net/sitemap.xml">Site Map</a>
+	        <a class="item" href="https://t.me/gridcoin">Gridcoin Chat</a>
+	      </div>
+	    </div>
+	</div>
   <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   <!--Social links-->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58fcf502b846a36a"></script>
