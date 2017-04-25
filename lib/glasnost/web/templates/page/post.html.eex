@@ -20,9 +20,9 @@
 		<div class="ui breadcrumb">
 		  <a class="section" href="https://beyondboinc.net">Home</a>
 		  <span class="divider">/</span>
-		  <div class="section">Author: <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></div>
+		  <div class="section">@<a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></div>
 		  <span class="divider">/</span>
-		  <div class="active section"><a href="https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"><%= @post.permlink %></a></div>
+		  <div class="active section"><a href="https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"><%= @post.title %></a></div>
 		</div>
     </div>
 </div>
