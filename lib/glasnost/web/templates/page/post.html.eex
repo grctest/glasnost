@@ -48,7 +48,7 @@
         "genre": "<%= for tag <- @post.tags do %><%=tag%> <% end %>", 
         "keywords": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
         "articleSection": "<%= for tag <- @post.tags do %><%=tag%> <% end %>",
-        "publisher" : { "@type" : "Organization", "name" : "Steemit" },
+        "publisher" : { "@type" : "Organization", "name" : "Steemit", "logo" : "https://beyondboinc.net/images/steem-logo.png" },
         "url": "https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/",
         "mainEntityOfPage": {
          "@type": "WebPage",
