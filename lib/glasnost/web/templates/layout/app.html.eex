@@ -67,7 +67,7 @@
 </head>
 <body>
 	<header>
-		<div class="ui borderless compact fixed main menu">
+		<div class="ui inverted borderless compact fixed main menu">
 			<div class="ui text container">
 				<a href="/" class="header item">
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
@@ -151,13 +151,197 @@
 					</div>
 				</div>
 				<div class="ui simple computer only dropdown item">
+					BOINC links<i class="dropdown icon"></i>
+					<div class="menu">
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Official</span>
+							<div class="left menu">
+								<div class="item">
+									<a href="https://boinc.berkeley.edu/" style="color:#9A9899;">BOINC Website</a>
+								</div>
+								<div class="item">
+									<a href="https://boinc.berkeley.edu/dev/" style="color:#9A9899;">BOINC Forums</a>
+								</div>
+								<div class="item">
+									<a href="https://github.com/boinc/boinc/" style="color:#9A9899;">GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Services</span>
+							<div class="right menu">
+								<div class="item">
+									<a href="http://formula-boinc.org/" style="color:#9A9899;">FormulaBOINC</a>
+								</div>
+								<div class="item">
+									<a href="http://uotd.org/" style="color:#9A9899;">User of the day</a>
+								</div>
+								<div class="item">
+									<a href="http://desktopgridfederation.org/" style="color:#9A9899;">Desktop Grid Federation</a>
+								</div>
+								<div class="item">
+									<a href="https://boincstats.com" style="color:#9A9899;">Boincstats</a>
+								</div>
+								<div class="item">
+									<a href="https://statsbzh.boinc-af.org/" style="color:#9A9899;">Statsbzh</a>
+								</div>
+								<div class="item">
+									<a href="http://www.dc-vault.com/" style="color:#9A9899;">DC-Vault</a>
+								</div>
+								<div class="item">
+									<a href="http://stats.free-dc.org/stats.php?page=index" style="color:#9A9899;">Free-DC</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Team Forums</span>
+							<div class="right menu">
+								<div class="item">
+									<a href="http://www.rechenkraft.net/" style="color:#9A9899;">Rechenkraft</a>
+								</div>
+								<div class="item">
+									<a href="http://www.seti-germany.de/" style="color:#9A9899;">SETI Germany</a>
+								</div>
+								<div class="item">
+									<a href="http://www.setiusa.us/" style="color:#9A9899;">SETI USA</a>
+								</div>
+								<div class="item">
+									<a href="http://www.free-dc.org/forum.php" style="color:#9A9899;">Free-DC</a>
+								</div>
+								<div class="item">
+									<a href="http://forum.czechnationalteam.cz/" style="color:#9A9899;">Czech national team</a>
+								</div>
+								<div class="item">
+									<a href="https://forum.boinc-af.org/" style="color:#9A9899;">L'Alliance Francophone</a>
+								</div>
+								<div class="item">
+									<a href="http://www.overclock.net/f/365/overclock-net-boinc-team" style="color:#9A9899;">Overclock.Net</a>
+								</div>
+								<div class="item">
+									<a href="https://www.planet3dnow.de/vbulletin/forum.php" style="color:#9A9899;">Planet3DNow</a>
+								</div>
+							</div>
+						</div>
+						<!-- TODO:
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Projects</span>
+							<div class="right menu">
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+								<div class="item">
+									<a href="" style="color:#9A9899;"></a>
+								</div>
+							</div>
+						</div>-->
+
+					</div>
+				</div>
+
+				<div class="ui simple computer only dropdown item">
 					Community links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
 							<i class="dropdown icon"></i> <span class="text">Gridcoin</span>
 							<div class="left menu">
 								<div class="item">
-									<a href="https://www.gridcoin.us" style="color:#9A9899;">Website</a>
+									<a href="https://www.gridcoin.us" style="color:#9A9899;">Official Website</a>
 								</div>
 								<div class="item">
 									<a href="https://cryptocointalk.com/forum/464-gridcoin-grc/" style="color:#9A9899;">Forums</a>
@@ -181,36 +365,10 @@
 									<a href="https://kiwiirc.com/client/irc.freenode.net:6667/#gridcoin" style="color:#9A9899;">IRC</a>
 								</div>
 								<div class="item">
-									<a href="http://wiki.gridcoin.us/Main_Page" style="color:#9A9899;">Wiki</a>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<i class="dropdown icon"></i> <span class="text">BOINC</span>
-							<div class="left menu">
-								<div class="item">
-									<a href="https://boinc.berkeley.edu/" style="color:#9A9899;">BOINC Website</a>
+									<a href="http://wiki.gridcoin.us/Main_Page" style="color:#9A9899;">GRC MediaWiki</a>
 								</div>
 								<div class="item">
-									<a href="https://boinc.berkeley.edu/dev/" style="color:#9A9899;">BOINC Forums</a>
-								</div>
-								<div class="item">
-									<a href="http://formula-boinc.org/" style="color:#9A9899;">FormulaBOINC</a>
-								</div>
-								<div class="item">
-									<a href="http://uotd.org/" style="color:#9A9899;">User of the day</a>
-								</div>
-								<div class="item">
-									<a href="http://www.rechenkraft.net/" style="color:#9A9899;">Rechenkraft</a>
-								</div>
-								<div class="item">
-									<a href="http://desktopgridfederation.org/" style="color:#9A9899;">Desktop Grid Federation</a>
-								</div>
-								<div class="item">
-									<a href="http://www.seti-germany.de/" style="color:#9A9899;">SETI Germany</a>
-								</div>
-								<div class="item">
-									<a href="http://www.setiusa.us/" style="color:#9A9899;">SETI USA</a>
+									<a href="https://en.wikipedia.org/wiki/Gridcoin" style="color:#9A9899;">GRC @ Wikipedia</a>
 								</div>
 							</div>
 						</div>
@@ -245,6 +403,29 @@
 								</div>
 								<div class="item">
 									<a href="https://github.com/BunkerChainLabsInc" style="color:#9A9899;">GitHub</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Steemit</span>
+							<div class="right menu">
+								<div class="item">
+									<a href="https://steemit.com" style="color:#9A9899;">Official website</a>
+								</div>
+								<div class="item">
+									<a href="https://t.me/steem_en" style="color:#9A9899;">Telegram</a>
+								</div>
+								<div class="item">
+									<a href="https://steemit.chat/" style="color:#9A9899;">Steemit.Chat</a>
+								</div>
+								<div class="item">
+									<a href="https://github.com/steemit/steem" style="color:#9A9899;">GitHub</a>
+								</div>
+								<div class="item">
+									<a href="http://steemtools.com/" style="color:#9A9899;">Applications</a>
+								</div>
+								<div class="item">
+									<a href="https://steemd.com/" style="color:#9A9899;">Explorer</a>
 								</div>
 							</div>
 						</div>
@@ -308,6 +489,7 @@
 	          <h4 class="ui inverted header">About</h4>
 	          <p>BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> library & is actively maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.</p>
 	          <p>Want to be a featured author? Join the <a href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a> to apply.</p>
+	          <p>GRC Address: SCyjzkycFPZ1pgR2WP4xvk9o5AD5kArWfX</p>
 	        </div>
 	      </div>
 	      <div class="ui inverted section divider"></div>

@@ -36,6 +36,7 @@
   </div>
 
   <div class="ui basic center aligned segment">
+    <h4 class="ui header">Additional pages</h4>
     <div class="ui pagination menu">
       <%= for {v, i} <- generate_pagination_list(@current_page) do %>
       <!-- FIXME: extract href generation to view -->
