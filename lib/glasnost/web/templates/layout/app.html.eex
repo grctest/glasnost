@@ -74,7 +74,7 @@
 	        	<a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
 	        	<!--<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>-->
 	        
-	        	<div class="ui simple dropdown item">
+	        	<div class="ui simple computer dropdown item">
 					Trade GRC <i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="header">
@@ -140,7 +140,7 @@
 					</div>
 				</div>
 
-				<div class="ui simple dropdown item">
+				<div class="ui simple computer dropdown item">
 					Community links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
@@ -297,6 +297,7 @@
 	        <div class="seven wide column">
 	          <h4 class="ui inverted header">About</h4>
 	          <p>BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> library & is actively maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.</p>
+	          <p>Want to be a featured author? Join the <a href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a> to apply.</p>
 	        </div>
 	      </div>
 	      <div class="ui inverted section divider"></div>
@@ -304,7 +305,7 @@
 	      <div class="ui horizontal inverted small divided link list">
 	        <a class="item" href="https://beyondboinc.net">Home</a>
 	        <a class="item" href="https://beyondboinc.net/sitemap.xml">Site Map</a>
-	        <a class="item" href="https://t.me/gridcoin">Gridcoin Chat</a>
+	        <a class="item" href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a>
 	        <div id="google_translate_element"></div>
 	      </div>
 	    </div>

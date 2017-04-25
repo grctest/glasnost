@@ -12,11 +12,15 @@ defmodule Glasnost.Post do
     field :json_metadata, :map
     field :category, :string
     field :created, Ecto.DateTime
+    field :total_payout_value, :string
+    field :curator_payout_value, :string
+    field :author_rewards, :string
+    field :net_votes, :string
   end
 
   def changeset(comment, params) do
     comment
-    |> cast(params, [:id, :author, :title, :json_metadata, :permlink, :body, :tags, :category, :created])
+    |> cast(params, [:id, :author, :title, :json_metadata, :permlink, :body, :tags, :category, :created, :total_payout_value, :curator_payout_value, :author_rewards, :net_votes])
     |> unique_constraint(:id, name: :golos_comments_id_index)
   end
 
