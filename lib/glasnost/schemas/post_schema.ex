@@ -20,7 +20,7 @@ defmodule Glasnost.Post do
 
   def changeset(comment, params) do
     comment
-    |> cast(params, [:id, :author, :title, :json_metadata, :permlink, :body, :tags, :category, :created, :total_payout_value, :curator_payout_value, :author_rewards, :net_votes])
+    |> cast(params, [:id, :author, :title, :json_metadata, :permlink, :body, :tags, :category, :created])
     |> unique_constraint(:id, name: :golos_comments_id_index)
   end
 
