@@ -47,7 +47,7 @@
     </div>
     
     <div class="ui section divider"></div>
-
+    <h4 class="ui header">Tags present in this page</h4>
     <div class="ui Small labels" id="manytags">
       <%= for post <- @posts do %>
           <%= for tag <- post.tags do %>
