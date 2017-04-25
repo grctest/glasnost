@@ -12,10 +12,6 @@ defmodule Glasnost.Post do
     field :json_metadata, :map
     field :category, :string
     field :created, Ecto.DateTime
-    field :total_payout_value, :string
-    field :curator_payout_value, :string
-    field :author_rewards, :string
-    field :net_votes, :string
   end
 
   def changeset(comment, params) do
