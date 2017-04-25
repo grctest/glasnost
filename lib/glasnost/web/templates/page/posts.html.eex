@@ -48,15 +48,13 @@
     
     <div class="ui section divider"></div>
 
-    <div class="">
+    <div class="ui Small labels">
       <%= for post <- @posts do %>
-        <div class="ui Small labels">
           <%= for tag <- post.tags do %>
           <a class="ui  label" href="/tags/<%=tag%>">
             <%= format_tag(tag, @conn.assigns.lang) %>
           </a>
           <% end %>
-        </div>
       <% end %>
     </div>
   </div>
