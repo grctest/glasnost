@@ -71,10 +71,3 @@
     }
 ]
 </script>
-
-<!--
-    field :total_payout_value, :string = <%= @post.total_payout_value %>
-    field :curator_payout_value, :string = <%= @post.curator_payout_value %>
-    field :author_rewards, :string = <%= @post.author_rewards %>
-    field :net_votes, :string = <%= @post.net_votes %>
--->
