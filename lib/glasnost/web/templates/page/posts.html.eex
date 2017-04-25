@@ -48,18 +48,16 @@
     
     <div class="ui section divider"></div>
 
-    <div class="ui Small labels">
+    <div class="ui Small labels" id="manytags">
       <%= for post <- @posts do %>
           <%= for tag <- post.tags do %>
-          <a class="ui  label" href="/tags/<%=tag%>">
+          <a class="ui Small label" href="/tags/<%=tag%>">
             <%= format_tag(tag, @conn.assigns.lang) %>
           </a>
           <% end %>
       <% end %>
     </div>
   </div>
-
-
 
 <script type='application/ld+json'> 
 {
@@ -71,3 +69,15 @@
   "url": "https://beyondboinc.net"
 }
  </script>
+<script>
+  $(document).ready(function(){
+    var seen = {};
+    $('#manytags a').each(function() {
+        var txt = $(this).text();
+        if (seen[txt])
+            $(this).remove();
+        else
+            seen[txt] = true;
+    });
+  });
+</script>
