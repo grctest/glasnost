@@ -83,21 +83,11 @@
 						<div class="item">
 							<i class="dropdown icon"></i> <span class="text">Decentralized Exchanges</span>
 							<div class="left menu">
-								<div class="item">
-									<a href="https://bitsquare.io/" style="color:#9A9899;">BitSquare</a>
-								</div>
-								<div class="item">
-									<a href="https://bitshares.openledger.info/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">OpenLedger</a>
-								</div>
-								<div class="item">
-									<a href="https://bit.btsabc.org/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">BTSABC</a>
-								</div>
-								<div class="item">
-									<a href="https://btsbots.com/a/OPEN.GRC" style="color:#9A9899;">BTSBOTS</a>
-								</div>
-								<div class="item">
-									<a href="https://bitshares.org/" style="color:#9A9899;">Bitshares-Light</a>
-								</div>
+								<a href="https://bitsquare.io/" style="color:#9A9899;"><div class="item"></a>BitSquare</div>
+								<a href="https://bitshares.openledger.info/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;"><div class="item">OpenLedger</div></a>
+								<a href="https://bit.btsabc.org/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;"><div class="item">BTSABC</div></a>
+								<a href="https://btsbots.com/a/OPEN.GRC" style="color:#9A9899;"><div class="item">BTSBOTS</div></a>
+								<a href="https://bitshares.org/" style="color:#9A9899;"><div class="item">Bitshares-Light</div></a>
 							</div>
 						</div>
 						<div class="item">
