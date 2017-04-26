@@ -150,6 +150,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="ui simple computer only dropdown item">
 					BOINC links<i class="dropdown icon"></i>
 					<div class="menu">
@@ -229,7 +230,7 @@
 					BOINC Projects<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
-							<i class="dropdown icon"></i> <span class="text">Official</span>
+							<i class="dropdown icon"></i> <span class="text">Physical Science</span>
 							<div class="right menu">
 								<div class="item"><a href="https://atlasathome.cern.ch/" style="color:#9A9899;">ATLAS@Home</a></div>
 								<div class="item"><a href="https://www.cosmologyathome.org/" style="color:#9A9899;">Cosmology@Home</a></div>
@@ -380,7 +381,7 @@
 					</div>
 				</div>
 
-				<div class="ui mini action input">
+				<div class="ui simple action input item">
 				  <input placeholder="Search..." type="text" id="Search">
 				  <button class="ui icon button" id="Button">
 				    <i class="search icon"></i>
@@ -393,13 +394,17 @@
 		<main role="main">
 			<div class="alert">
 				<%= if get_flash(@conn, :info) do %>
-				<div class="ui secondary yellow inverted segment">
-					<%= get_flash(@conn, :info) %>
-				</div><%end %><%= if get_flash(@conn, :error) do %>
-				<div class="ui secondary red inverted segment">
-					<%= get_flash(@conn, :error) %>
-				</div><%end %>
-			</div><%= render @view_module, @view_template, assigns %>
+					<div class="ui secondary yellow inverted segment">
+						<%= get_flash(@conn, :info) %>
+					</div>
+				<%end %>
+				<%= if get_flash(@conn, :error) do %>
+					<div class="ui secondary red inverted segment">
+						<%= get_flash(@conn, :error) %>
+					</div>
+				<%end %>
+			</div>
+			<%= render @view_module, @view_template, assigns %>
 		</main>
 	</div>
 
@@ -447,7 +452,7 @@
 	      <img class="ui centered mini image" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
 	      <div class="ui horizontal inverted small divided link list">
 	        <a class="item" href="https://beyondboinc.net">Home</a>
-	        <a class="item" href="https://beyondboinc.net/sitemap.xml">Site Map</a>
+	        <a class="item" href="https://beyondboinc.net/images/sitemap.xml">Site Map</a>
 	        <a class="item" href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a>
 	        <div id="google_translate_element"></div>
 	      </div>

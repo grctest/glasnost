@@ -1,64 +1,76 @@
+<div class="ui basic center aligned segment">
+  <h4 class="ui header">Curated content</h4>
+</div>
+
 <div class="ui three column doubling stackable grid cards">
   <%= for post <- @posts do %>
-  <!-- TODO: extract image detection into view -->
-  <!-- metadata images property varies from post to post: BOTH "images" and "images" are seen in the wild -->
-  <!-- FIXME: mage property is non-standard and should be removed at some time in the future -->
-  <% img_src = hd(post.json_metadata["image"] || post.json_metadata["images"] || [false] ) %>
-  <div class="ui card" >
-    <div class="image">
-      <a href="/authors/<%= post.author %>/<%= post.permlink %>">
-        <!-- TODO  extract image selection into view -->
-        <%= if img_src do %>
-          <img src="<%= img_src %>">
-        <% end %>
-      </a>
+    
+    <!-- TODO: extract image detection into view -->
+    <!-- metadata images property varies from post to post: BOTH "images" and "images" are seen in the wild -->
+    <!-- FIXME: mage property is non-standard and should be removed at some time in the future -->
+    
+    <% img_src = hd(post.json_metadata["image"] || post.json_metadata["images"] || [false] ) %>
+    <div class="ui card" >
+      <div class="image">
+        <a href="/authors/<%= post.author %>/<%= post.permlink %>">
+          <!-- TODO  extract image selection into view -->
+          <%= if img_src do %>
+            <img src="<%= img_src %>">
+          <% end %>
+        </a>
       </div>
+
       <div class="content">
         <a class="header" href="/authors/<%= post.author %>/<%= post.permlink %>"> <%= post.title %> </a>
-
         <!-- <div class="description"> </div> -->
       </div>
+
       <div class="extra content">
         <a class="ui large blue ribbon label" href="/authors/<%= post.author %>">  @<%= post.author  %></a>
-        
+
         <div class="ui large labels">
           <!-- FIXME some old posts don't have any tags -->
           <%= for tag <- post.tags do %>
-          <a class="ui  label" href="/tags/<%=tag%>">
-            <%= format_tag(tag, @conn.assigns.lang) %>
-          </a>
+            <a class="ui  label" href="/tags/<%=tag%>">
+              <%= format_tag(tag, @conn.assigns.lang) %>
+            </a>
           <% end %>
         </div>
       </div>
 
     </div>
+  <% end %>
+</div>
+
+<div class="ui basic center aligned segment">
+
+  <h4 class="ui header">Additional pages</h4>
+
+  <div class="ui pagination menu">
+    <%= for {v, i} <- generate_pagination_list(@current_page) do %>
+    <!-- FIXME: extract href generation to view -->
+    <a class="<%=if v == @current_page, do: "active" %> item"
+      href="<%= @conn.request_path <> "?" <> URI.encode_query(%{"page"=> v}) %>">
+      <%= v %>
+    </a>
+    <% end %>
+  </div>
+  
+  <div class="ui section divider"></div>
+
+  <h4 class="ui header">Tags present in this page</h4>
+
+  <div class="ui Small labels" id="manytags">
+    <%= for post <- @posts do %>
+        <%= for tag <- post.tags do %>
+        <a class="ui Small label" href="/tags/<%=tag%>">
+          <%= format_tag(tag, @conn.assigns.lang) %>
+        </a>
+        <% end %>
     <% end %>
   </div>
 
-  <div class="ui basic center aligned segment">
-    <h4 class="ui header">Additional pages</h4>
-    <div class="ui pagination menu">
-      <%= for {v, i} <- generate_pagination_list(@current_page) do %>
-      <!-- FIXME: extract href generation to view -->
-      <a class="<%=if v == @current_page, do: "active" %> item"
-        href="<%= @conn.request_path <> "?" <> URI.encode_query(%{"page"=> v}) %>">
-        <%= v %>
-      </a>
-      <% end %>
-    </div>
-    
-    <div class="ui section divider"></div>
-    <h4 class="ui header">Tags present in this page</h4>
-    <div class="ui Small labels" id="manytags">
-      <%= for post <- @posts do %>
-          <%= for tag <- post.tags do %>
-          <a class="ui Small label" href="/tags/<%=tag%>">
-            <%= format_tag(tag, @conn.assigns.lang) %>
-          </a>
-          <% end %>
-      <% end %>
-    </div>
-  </div>
+</div>
 
 <script type='application/ld+json'> 
 {
