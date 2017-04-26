@@ -67,7 +67,7 @@
 </head>
 <body>
 	<header>
-		<div class="ui inverted borderless compact fixed main menu">
+		<div class="ui borderless compact fixed main menu">
 			<div class="ui text container">
 				<a href="/" class="header item">
           			<img class="logo" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
