@@ -222,64 +222,63 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
 
+				<div class="ui simple computer only dropdown item">
+					BOINC Projects<i class="dropdown icon"></i>
+					<div class="menu">
 						<div class="item">
-							<i class="dropdown icon"></i> <span class="text">Projects</span>
+							<i class="dropdown icon"></i> <span class="text">Official</span>
 							<div class="right menu">
-								<div class="item">
-									<i class="dropdown icon"></i> <span class="text">Physical Science</span>
-									<div class="right menu">
-										<div class="item"><a href="https://atlasathome.cern.ch/" style="color:#9A9899;">ATLAS@Home</a></div>
-										<div class="item"><a href="https://www.cosmologyathome.org/" style="color:#9A9899;">Cosmology@Home</a></div>
-										<div class="item"><a href="https://lhcathomeclassic.cern.ch/sixtrack/" style="color:#9A9899;">LHC@Home</a></div>
-										<div class="item"><a href="https://pogs.theskynet.org/pogs/" style="color:#9A9899;">theSkyNet POGS</a></div>
-										<div class="item"><a href="https://www.universeathome.pl/universe/" style="color:#9A9899;">Universe@home</a></div>
-										<div class="item"><a href="https://asteroidsathome.net/boinc/" style="color:#9A9899;">Asteroids@home</a></div>
-										<div class="item"><a href="https://einstein.phys.uwm.edu/" style="color:#9A9899;">Einstein@home</a></div>
-										<div class="item"><a href="https://milkyway.cs.rpi.edu/milkyway/" style="color:#9A9899;">Milkyway@home</a></div>
-										<div class="item"><a href="https://setiathome.berkeley.edu/" style="color:#9A9899;">SETI@home</a></div>
-									</div>
-								</div>
-								<div class="item">
-									<i class="dropdown icon"></i> <span class="text">Multiple Applications</span>
-									<div class="right menu">
-										<div class="item"><a href="http://volunteer.cs.und.edu/csg/" style="color:#9A9899;">Citizen Science Grid</a></div>
-										<div class="item"><a href="http://szdg.lpds.sztaki.hu/szdg/" style="color:#9A9899;">SZTAKI Desktop Grid</a></div>
-										<div class="item"><a href="https://www.worldcommunitygrid.org/" style="color:#9A9899;">World Community Grid</a></div>
-										<div class="item"><a href="https://www.rechenkraft.net/yoyo/" style="color:#9A9899;">yoyo@home</a></div>
-									</div>
-								</div>
-								<div class="item">
-									<i class="dropdown icon"></i> <span class="text">Mathematics and Computing</span>
-									<div class="right menu">
-										<div class="item"><a href="http://www.enigmaathome.net/" style="color:#9A9899;">Enigma@Home</a></div>
-										<div class="item"><a href="https://escatter11.fullerton.edu/nfs/" style="color:#9A9899;">NFS@Home</a></div>
-										<div class="item"><a href="https://numberfields.asu.edu/NumberFields/" style="color:#9A9899;">NumberFields@home</a></div>
-										<div class="item"><a href="http://srbase.my-firewall.org/sr5/" style="color:#9A9899;">SRBase</a></div>
-										<div class="item"><a href="https://boinc.vgtu.lt/vtuathome/index.php" style="color:#9A9899;">VGTU</a></div>
-										<div class="item"><a href="http://yafu.myfirewall.org/" style="color:#9A9899;">YAFU</a></div>
-										<div class="item"><a href="https://sech.me/boinc/Amicable/" style="color:#9A9899;">Amicable Numbers</a></div>
-										<div class="item"><a href="https://boinc.thesonntags.com/collatz/" style="color:#9A9899;">Collatz Conjecture</a></div>
-										<div class="item"><a href="https://moowrap.net/" style="color:#9A9899;">Moo! Wrapper</a></div>
-										<div class="item"><a href="https://www.primegrid.com/" style="color:#9A9899;">PrimeGrid</a></div>
-									</div>
-								</div>
-								<div class="item">
-									<i class="dropdown icon"></i> <span class="text">Earth Sciences</span>
-									<div class="right menu">
-										<div class="item"><a href="http://boinc.gorlaeus.net/" style="color:#9A9899;">Leiden Classical</a></div>
-									</div>
-								</div>
-								<div class="item">
-									<i class="dropdown icon"></i> <span class="text">Biology and Medicine</span>
-									<div class="right menu">
-										<div class="item"><a href="https://boinc.bakerlab.org/rosetta/" style="color:#9A9899;">Rosetta@Home</a></div>
-										<div class="item"><a href="https://www.gpugrid.net/" style="color:#9A9899;">GPUgrid</a></div>
-									</div>
-								</div>
+								<div class="item"><a href="https://atlasathome.cern.ch/" style="color:#9A9899;">ATLAS@Home</a></div>
+								<div class="item"><a href="https://www.cosmologyathome.org/" style="color:#9A9899;">Cosmology@Home</a></div>
+								<div class="item"><a href="https://lhcathomeclassic.cern.ch/sixtrack/" style="color:#9A9899;">LHC@Home</a></div>
+								<div class="item"><a href="https://pogs.theskynet.org/pogs/" style="color:#9A9899;">theSkyNet POGS</a></div>
+								<div class="item"><a href="https://www.universeathome.pl/universe/" style="color:#9A9899;">Universe@home</a></div>
+								<div class="item"><a href="https://asteroidsathome.net/boinc/" style="color:#9A9899;">Asteroids@home</a></div>
+								<div class="item"><a href="https://einstein.phys.uwm.edu/" style="color:#9A9899;">Einstein@home</a></div>
+								<div class="item"><a href="https://milkyway.cs.rpi.edu/milkyway/" style="color:#9A9899;">Milkyway@home</a></div>
+								<div class="item"><a href="https://setiathome.berkeley.edu/" style="color:#9A9899;">SETI@home</a></div>
 							</div>
 						</div>
-
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Multiple Applications</span>
+							<div class="right menu">
+								<div class="item"><a href="http://volunteer.cs.und.edu/csg/" style="color:#9A9899;">Citizen Science Grid</a></div>
+								<div class="item"><a href="http://szdg.lpds.sztaki.hu/szdg/" style="color:#9A9899;">SZTAKI Desktop Grid</a></div>
+								<div class="item"><a href="https://www.worldcommunitygrid.org/" style="color:#9A9899;">World Community Grid</a></div>
+								<div class="item"><a href="https://www.rechenkraft.net/yoyo/" style="color:#9A9899;">yoyo@home</a></div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Mathematics and Computing</span>
+							<div class="right menu">
+								<div class="item"><a href="http://www.enigmaathome.net/" style="color:#9A9899;">Enigma@Home</a></div>
+								<div class="item"><a href="https://escatter11.fullerton.edu/nfs/" style="color:#9A9899;">NFS@Home</a></div>
+								<div class="item"><a href="https://numberfields.asu.edu/NumberFields/" style="color:#9A9899;">NumberFields@home</a></div>
+								<div class="item"><a href="http://srbase.my-firewall.org/sr5/" style="color:#9A9899;">SRBase</a></div>
+								<div class="item"><a href="https://boinc.vgtu.lt/vtuathome/index.php" style="color:#9A9899;">VGTU</a></div>
+								<div class="item"><a href="http://yafu.myfirewall.org/" style="color:#9A9899;">YAFU</a></div>
+								<div class="item"><a href="https://sech.me/boinc/Amicable/" style="color:#9A9899;">Amicable Numbers</a></div>
+								<div class="item"><a href="https://boinc.thesonntags.com/collatz/" style="color:#9A9899;">Collatz Conjecture</a></div>
+								<div class="item"><a href="https://moowrap.net/" style="color:#9A9899;">Moo! Wrapper</a></div>
+								<div class="item"><a href="https://www.primegrid.com/" style="color:#9A9899;">PrimeGrid</a></div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Earth Sciences</span>
+							<div class="right menu">
+								<div class="item"><a href="http://boinc.gorlaeus.net/" style="color:#9A9899;">Leiden Classical</a></div>
+							</div>
+						</div>
+						<div class="item">
+							<i class="dropdown icon"></i> <span class="text">Biology and Medicine</span>
+							<div class="right menu">
+								<div class="item"><a href="https://boinc.bakerlab.org/rosetta/" style="color:#9A9899;">Rosetta@Home</a></div>
+								<div class="item"><a href="https://www.gpugrid.net/" style="color:#9A9899;">GPUgrid</a></div>
+							</div>
+						</div>
 					</div>
 				</div>
 
