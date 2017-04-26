@@ -222,114 +222,39 @@
 								</div>
 							</div>
 						</div>
-						<!-- TODO:
+
 						<div class="item">
 							<i class="dropdown icon"></i> <span class="text">Projects</span>
 							<div class="right menu">
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
-								<div class="item">
-									<a href="" style="color:#9A9899;"></a>
-								</div>
+								<div class="item"><a href="https://atlasathome.cern.ch/" style="color:#9A9899;">ATLAS@Home</a></div>
+								<div class="item"><a href="https://atlas.ch/" style="color:#9A9899;">ATLAS.CH</a></div>
+								<div class="item"><a href="http://volunteer.cs.und.edu/csg/" style="color:#9A9899;">Citizen Science Grid</a></div>
+								<div class="item"><a href="https://www.cosmologyathome.org/" style="color:#9A9899;">Cosmology@Home</a></div>
+								<div class="item"><a href="http://www.enigmaathome.net/" style="color:#9A9899;">Enigma@Home</a></div>
+								<div class="item"><a href="http://boinc.gorlaeus.net/" style="color:#9A9899;">Leiden Classical</a></div>
+								<div class="item"><a href="https://lhcathomeclassic.cern.ch/sixtrack/" style="color:#9A9899;">LHC@Home</a></div>
+								<div class="item"><a href="https://escatter11.fullerton.edu/nfs/" style="color:#9A9899;">NFS@Home</a></div>
+								<div class="item"><a href="https://numberfields.asu.edu/NumberFields/" style="color:#9A9899;">NumberFields@home</a></div>
+								<div class="item"><a href="https://boinc.bakerlab.org/rosetta/" style="color:#9A9899;">Rosetta@Home</a></div>
+								<div class="item"><a href="http://srbase.my-firewall.org/sr5/" style="color:#9A9899;">SRBase</a></div>
+								<div class="item"><a href="http://szdg.lpds.sztaki.hu/szdg/" style="color:#9A9899;">SZTAKI Desktop Grid</a></div>
+								<div class="item"><a href="https://pogs.theskynet.org/pogs/" style="color:#9A9899;">theSkyNet POGS</a></div>
+								<div class="item"><a href="https://boinc.vgtu.lt/vtuathome/index.php" style="color:#9A9899;">VGTU</a></div>
+								<div class="item"><a href="https://www.universeathome.pl/universe/" style="color:#9A9899;">Universe@home</a></div>
+								<div class="item"><a href="https://www.worldcommunitygrid.org/" style="color:#9A9899;">World Community Grid</a></div>
+								<div class="item"><a href="http://yafu.myfirewall.org/" style="color:#9A9899;">YAFU</a></div>
+								<div class="item"><a href="https://www.rechenkraft.net/yoyo/" style="color:#9A9899;">yoyo@home</a></div>
+								<div class="item"><a href="https://sech.me/boinc/Amicable/" style="color:#9A9899;">Amicable Numbers</a></div>
+								<div class="item"><a href="https://asteroidsathome.net/boinc/" style="color:#9A9899;">Asteroids@home</a></div>
+								<div class="item"><a href="https://boinc.thesonntags.com/collatz/" style="color:#9A9899;">Collatz Conjecture</a></div>
+								<div class="item"><a href="https://einstein.phys.uwm.edu/" style="color:#9A9899;">Einstein@home</a></div>
+								<div class="item"><a href="https://www.gpugrid.net/" style="color:#9A9899;">GPUgrid</a></div>
+								<div class="item"><a href="https://milkyway.cs.rpi.edu/milkyway/" style="color:#9A9899;">Milkyway@home</a></div>
+								<div class="item"><a href="https://moowrap.net/" style="color:#9A9899;">Moo! Wrapper</a></div>
+								<div class="item"><a href="https://www.primegrid.com/" style="color:#9A9899;">PrimeGrid</a></div>
+								<div class="item"><a href="https://setiathome.berkeley.edu/" style="color:#9A9899;">SETI@home</a></div>
 							</div>
-						</div>-->
+						</div>
 
 					</div>
 				</div>
@@ -463,6 +388,7 @@
 	          <div class="ui inverted link list">
 	            <a href="https://beyondboinc.net/tags/gridcoin" class="item">Gridcoin</a>
 	            <a href="https://beyondboinc.net/tags/boinc" class="item">BOINC</a>
+	            <a href="https://beyondboinc.net/tags/bitshares" class="item">Bitshares</a>
 	            <a href="https://beyondboinc.net/tags/beyondbitcoin" class="item">BeyondBitcoin</a>
 	            <a href="https://beyondboinc.net/tags/cryptocurrency" class="item">Cryptocurrency</a>
 	          </div>
@@ -473,7 +399,8 @@
 	            <a href="https://beyondboinc.net/authors/cm-steem/" class="item">CM-Steem</a>
 	            <a href="https://beyondboinc.net/authors/officialfuzzy/" class="item">OfficialFuzzy</a>
 	            <a href="https://beyondboinc.net/authors/erkan/" class="item">Erkan</a>
-	            <a href="https://beyondboinc.net/authors/chris4210/" class="item">Chris4210</a>
+	            <a href="https://beyondboinc.net/authors/sc-steemit/" class="item">SC-Steemit</a>
+	            <a href="https://beyondboinc.net/authors/moisesmcardona/" class="item">moisesmcardona</a>
 	          </div>
 	        </div>
 	        <div class="three wide column">
@@ -483,20 +410,34 @@
 	            <a href="https://affiliate.namecheap.com/?affId=115065" class="item">Namecheap</a>
 	            <a href="http://nordvpn.com/?ref=135613bd" class="item">NordVPN</a>
 	            <a href="https://purse.io/?_r=ewuZjT" class="item">Purse.IO</a>
+	            <a href="https://www.coinpayments.net/index.php?ref=b876aa63f7bf92ed4af474005a21bfaf" class="item">CoinPayments</a>
 	          </div>
 	        </div>
 	        <div class="seven wide column">
 	          <h4 class="ui inverted header">About</h4>
 	          <p>BeyondBOINC is a <a href="https://steemit.com/">Steemit</a> backed blog, powered by the <a href="https://github.com/cyberpunk-ventures/glasnost/"> Glasnost </a> library & is actively maintained by <a href="https://steemit.com/@cm-steem/">@CM-STEEM</a>.</p>
 	          <p>Want to be a featured author? Join the <a href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a> to apply.</p>
-	          <p>GRC Address: SCyjzkycFPZ1pgR2WP4xvk9o5AD5kArWfX</p>
+				<form action="https://www.coinpayments.net/index.php" method="post">
+					<input type="hidden" name="cmd" value="_donate">
+					<input type="hidden" name="reset" value="1">
+					<input type="hidden" name="merchant" value="b876aa63f7bf92ed4af474005a21bfaf">
+					<input type="hidden" name="item_name" value="BeyondBOINC.Net Donation">
+					<input type="hidden" name="currency" value="GRC">
+					<input type="hidden" name="amountf" value="100.00000000">
+					<input type="hidden" name="allow_amount" value="1">
+					<input type="hidden" name="want_shipping" value="0">
+					<input type="hidden" name="success_url" value="https://beyondboinc.net">
+					<input type="hidden" name="cancel_url" value="https://beyondboinc.net">
+					<input type="hidden" name="allow_extra" value="1">
+					<input type="image" src="https://www.coinpayments.net/images/pub/donate-wide-blue.png" alt="Donate with CoinPayments.net">
+				</form>
 	        </div>
 	      </div>
 	      <div class="ui inverted section divider"></div>
 	      <img class="ui centered mini image" src="/images/<%=naive_image_chooser("logo", @conn.assigns[:lang])%>">
 	      <div class="ui horizontal inverted small divided link list">
 	        <a class="item" href="https://beyondboinc.net">Home</a>
-	        <a class="item" href="https://beyondboinc.net/sitemap.xml">Site Map</a>
+	        <a class="item" href="https://beyondboinc.net/images/sitemap.xml">Site Map</a>
 	        <a class="item" href="https://t.me/BeyondBOINC">BeyondBOINC Telegram Chat</a>
 	        <div id="google_translate_element"></div>
 	      </div>
