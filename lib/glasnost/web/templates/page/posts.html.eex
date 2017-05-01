@@ -22,11 +22,11 @@
 
       <div class="content">
         <a class="header" href="/authors/<%= post.author %>/<%= post.permlink %>"> <%= post.title %> </a>
+        <a class="ui large blue ribbon label" href="/authors/<%= post.author %>">  @<%= post.author  %></a>
         <!-- <div class="description"> </div> -->
       </div>
 
       <div class="extra content">
-        <a class="ui large blue ribbon label" href="/authors/<%= post.author %>">  @<%= post.author  %></a>
 
         <div class="ui large labels">
           <!-- FIXME some old posts don't have any tags -->
@@ -36,6 +36,7 @@
             </a>
           <% end %>
         </div>
+      
       </div>
 
     </div>
