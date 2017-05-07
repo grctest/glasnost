@@ -77,7 +77,7 @@
 	        	<a href="/authors/<%=@conn.assigns[:about_blog_author]%>/<%=@conn.assigns[:about_blog_permlink]%>" class="item"><%=naive_translate("about", @conn.assigns[:lang])%></a>
 	        	<!--<a href="<%=if @conn.assigns[:lang] == "ru", do: "https://golos.io", else: "https://steemit.com"%>" class="item"><%=naive_translate("about_steemlike_chain", @conn.assigns[:lang])%></a>-->
 	        
-	        	<div class="ui simple computer only dropdown item">
+	        	<div class="large screen only ui simple dropdown item">
 					Trade GRC <i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
@@ -87,11 +87,14 @@
 									<a href="https://bitsquare.io/" style="color:#9A9899;">BitSquare</a>
 								</div>
 								<div class="item">
-									<a href="https://bitshares.openledger.info/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">OpenLedger</a>
+									<a href="https://openledger.io?r=abcde12345/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">OpenLedger</a>
 								</div>
 								<div class="item">
-									<a href="https://bit.btsabc.org/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">BTSABC</a>
+									<a href="https://bit.btsabc.org?r=abcde12345/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">BTSABC</a>
 								</div>
+								<civ class="item">
+									<a href="https://secure.freedomledger.com/?r=abcde12345" style="color:#9A9899;">FreedomLedger</a>
+								</civ>
 								<div class="item">
 									<a href="https://btsbots.com/a/OPEN.GRC" style="color:#9A9899;">BTSBOTS</a>
 								</div>
@@ -151,7 +154,7 @@
 					</div>
 				</div>
 
-				<div class="ui simple computer only dropdown item">
+	        	<div class="large screen only ui simple dropdown item">
 					BOINC links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
@@ -226,7 +229,7 @@
 					</div>
 				</div>
 
-				<div class="ui simple computer only dropdown item">
+	        	<div class="large screen only ui simple dropdown item">
 					BOINC Projects<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
@@ -283,7 +286,7 @@
 					</div>
 				</div>
 
-				<div class="ui simple computer only dropdown item">
+	        	<div class="large screen only ui simple dropdown item">
 					Community links<i class="dropdown icon"></i>
 					<div class="menu">
 						<div class="item">
