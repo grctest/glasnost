@@ -87,10 +87,13 @@
 									<a href="https://bitsquare.io/" style="color:#9A9899;">BitSquare</a>
 								</div>
 								<div class="item">
-									<a href="https://openledger.io?r=abcde12345/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">OpenLedger</a>
+									<a href="https://openledger.io?r=abcde12345" style="color:#9A9899;">OpenLedger</a>
 								</div>
 								<div class="item">
-									<a href="https://bit.btsabc.org?r=abcde12345/#/market/OPEN.GRC_OPEN.BTC" style="color:#9A9899;">BTSABC</a>
+									<a href="https://market.rudex.org?r=abcde12345" style="color:#9A9899;">Rudex</a>
+								</div>
+								<div class="item">
+									<a href="https://bit.btsabc.org?r=abcde12345" style="color:#9A9899;">BTSABC</a>
 								</div>
 								<civ class="item">
 									<a href="https://secure.freedomledger.com/?r=abcde12345" style="color:#9A9899;">FreedomLedger</a>
