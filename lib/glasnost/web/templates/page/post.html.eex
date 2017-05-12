@@ -21,7 +21,6 @@
           <div class="or"></div>
           <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><button class="ui blue button">Read more content by @<%= @post.author %></button></a>
         </div>
-        <div class="addthis_inline_share_toolbox"></div>
 		<div class="ui breadcrumb">
 		  <a class="section" href="https://beyondboinc.net">Home</a>
 		  <span class="divider">/</span>
