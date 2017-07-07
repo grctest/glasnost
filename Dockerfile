@@ -6,9 +6,11 @@ ENV GOLOS_URL=wss://ws.golos.io
 ENV STEEM_URL=wss://steemd.steemit.com
 
 RUN apt update
+RUN apt upgrade
 RUN apt install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt install -y nodejs
+RUN apt-get install build-essential
 
 ADD . /glasnost_app
 WORKDIR /glasnost_app
