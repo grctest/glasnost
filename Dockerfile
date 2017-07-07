@@ -10,7 +10,7 @@ RUN apt upgrade -y
 RUN apt install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt install -y nodejs
-RUN apt-get install build-essential
+RUN apt install -y build-essential
 
 ADD . /glasnost_app
 WORKDIR /glasnost_app
