@@ -418,26 +418,16 @@
 	    <div class="ui center aligned container">
 	      <div class="ui stackable inverted divided grid">
 	        <div class="three wide column">
-	          <h4 class="ui inverted header">Promoted Tags</h4>
-	          <div class="ui inverted link list">
-	            <a href="https://beyondboinc.net/tags/gridcoin" class="item">Gridcoin</a>
-	            <a href="https://beyondboinc.net/tags/boinc" class="item">BOINC</a>
-	            <a href="https://beyondboinc.net/tags/bitshares" class="item">Bitshares</a>
-	            <a href="https://beyondboinc.net/tags/beyondbitcoin" class="item">BeyondBitcoin</a>
-	            <a href="https://beyondboinc.net/tags/cryptocurrency" class="item">Cryptocurrency</a>
-	          </div>
-	        </div>
-	        <div class="three wide column">
 	          <h4 class="ui inverted header">Promoted Authors</h4>
 	          <div class="ui inverted link list">
 	            <a href="https://beyondboinc.net/authors/cm-steem/" class="item">@CM-Steem</a>
 	            <a href="https://beyondboinc.net/authors/officialfuzzy/" class="item">@OfficialFuzzy</a>
-	            <a href="https://beyondboinc.net/authors/erkan/" class="item">@Erkan</a>
 	            <a href="https://beyondboinc.net/authors/sc-steemit/" class="item">@SC-Steemit</a>
-	            <a href="https://beyondboinc.net/authors/moisesmcardona/" class="item">@moisesmcardona</a>
+	            <a href="https://beyondboinc.net/authors/vortac/" class="item">@vortac</a>
+	            <a href="https://beyondboinc.net/authors/dan/" class="item">@dan</a>
 	          </div>
 	        </div>
-	        <div class="three wide column">
+	        <div class="six wide column">
 	          <h4 class="ui inverted header">Affiliate links</h4>
 	          <div class="ui inverted link list">
 	            <a href="http://www.vultr.com/?ref=6948861" class="item">Vultr</a>

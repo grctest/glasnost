@@ -1,13 +1,6 @@
 <div class="ui main text container">
     <h1 class="ui header"><a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>"><%= @post.title %></a></h1>
     <h2 class="ui header">Author: <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a> (<a href="https://steemit.com/@<%= @post.author %>/">profile</a>)</h2>
-    <h3 class="ui header">Tags: 
-          <%= for tag <- @post.tags do %>
-          <a class="ui  label" href="/tags/<%=tag%>">
-            <%= format_tag(tag, @conn.assigns.lang) %>
-          </a>
-          <% end %>
-    </h3>
     <div class="ui section divider"></div>
 
     <div class="">
@@ -16,18 +9,19 @@
 
     <div class="ui section divider"></div>
     <div style="text-align:center; padding-bottom: 10px;">
-        <div class="ui buttons" style="padding-bottom: 10px;">
-          <a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>/?r=cm-steem"><button class="ui teal button">Comment</button></a>
-          <div class="or"></div>
-          <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><button class="ui blue button">Read more content by @<%= @post.author %></button></a>
-        </div>
-		<div class="ui breadcrumb">
-		  <a class="section" href="https://beyondboinc.net">Home</a>
-		  <span class="divider">/</span>
-		  <div class="section">@<a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></div>
-		  <span class="divider">/</span>
-		  <div class="active section"><a href="https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"><%= @post.title %></a></div>
-		</div>
+      <div class="ui buttons" style="padding-bottom: 10px;">
+        <a href="https://steemit.com/@<%= @post.author %>/<%= @post.permlink %>/?r=cm-steem"><button class="ui teal button">Comment</button></a>
+        <div class="or"></div>
+        <a href="https://beyondboinc.net/authors/<%= @post.author %>/"><button class="ui blue button">Read more content by @<%= @post.author %></button></a>
+      </div>
+      <br/>
+  		<div class="ui breadcrumb">
+  		  <a class="section" href="https://beyondboinc.net">Home</a>
+  		  <span class="divider">/</span>
+  		  <div class="section">@<a href="https://beyondboinc.net/authors/<%= @post.author %>/"><%= @post.author %></a></div>
+  		  <span class="divider">/</span>
+  		  <div class="active section"><a href="https://beyondboinc.net/authors/<%= @post.author %>/<%= @post.permlink %>/"><%= @post.title %></a></div>
+  		</div>
     </div>
 </div>
 

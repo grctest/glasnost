@@ -26,19 +26,6 @@
         <!-- <div class="description"> </div> -->
       </div>
 
-      <div class="extra content">
-
-        <div class="ui large labels">
-          <!-- FIXME some old posts don't have any tags -->
-          <%= for tag <- post.tags do %>
-            <a class="ui  label" href="/tags/<%=tag%>">
-              <%= format_tag(tag, @conn.assigns.lang) %>
-            </a>
-          <% end %>
-        </div>
-      
-      </div>
-
     </div>
   <% end %>
 </div>
@@ -54,20 +41,6 @@
       href="<%= @conn.request_path <> "?" <> URI.encode_query(%{"page"=> v}) %>">
       <%= v %>
     </a>
-    <% end %>
-  </div>
-  
-  <div class="ui section divider"></div>
-
-  <h4 class="ui header">Tags present in this page</h4>
-
-  <div class="ui Small labels" id="manytags">
-    <%= for post <- @posts do %>
-        <%= for tag <- post.tags do %>
-        <a class="ui Small label" href="/tags/<%=tag%>">
-          <%= format_tag(tag, @conn.assigns.lang) %>
-        </a>
-        <% end %>
     <% end %>
   </div>
 
