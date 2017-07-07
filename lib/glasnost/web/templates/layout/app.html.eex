@@ -35,16 +35,6 @@
  	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.css" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.js"></script>
-	<!-- Google Search -->
-	<script>
-	$(document).ready(function(){
-	    $('#Button').click(function(e) {  
-	        var inputvalue = $("#Search").val();
-	        window.location.replace("https://www.google.co.uk/#q=site:https://beyondboinc.net " + inputvalue);
-	    });
-	});
-	</script>
-	<!--/Google Search-->
 	<!--Google Analytics-->
 	<script>
 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -128,9 +118,6 @@
 							<div class="left menu">
 								<div class="item">
 									<a href="https://gridcoinstats.eu" style="color:#9A9899;">GridcoinStats</a>
-								</div>
-								<div class="item">
-									<a href="https://gridresearchcorp.com" style="color:#9A9899;">GridResearchCorp</a>
 								</div>
 								<div class="item">
 									<a href="http://explorer.gridcoin.asia/" style="color:#9A9899;">Explorer.Gridcoin.Asia</a>
@@ -385,13 +372,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="ui simple action input item">
-				  <input placeholder="Search..." type="text" id="Search">
-				  <button class="ui icon button" id="Button">
-				    <i class="search icon"></i>
-				  </button>
 				</div>
 			</div>
 		</div>
